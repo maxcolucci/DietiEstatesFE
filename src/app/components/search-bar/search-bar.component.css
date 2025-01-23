@@ -1,0 +1,30 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-left: 150px;
+  background-image: url('./searchBarImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+.search-container input {
+  color: #007bff;
+  font-weight: bold;;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #e0843d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

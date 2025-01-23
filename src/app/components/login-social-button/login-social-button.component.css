@@ -1,0 +1,22 @@
+.social-buttons button {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.google-button {
+  background: white;
+  color: grey;
+  border: 1px solid lightgray;
+}
+
+.facebook-button {
+  background: #1877f2;
+  color: white;
+}
+
+.github-button {
+  background: black;
+  color: white;
+}

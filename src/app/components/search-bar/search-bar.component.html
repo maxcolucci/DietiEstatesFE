@@ -1,0 +1,11 @@
+<div class="search-container">
+  <mat-form-field>
+    <mat-label>Tipo di struttura</mat-label>
+    <mat-select>
+      <ng-container>
+        <mat-option *ngFor="let building of buildingTypes" [value]="building.value">{{building.viewValue}}</mat-option>
+      </ng-container>
+    </mat-select>
+  </mat-form-field>
+<!--  <button (click)="onSearch()">Ricerca</button>-->
+</div>
