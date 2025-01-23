@@ -1,0 +1,44 @@
+.title-filters{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
+.filters-container {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  width: 300px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: lightgrey 1px solid;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0843d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
