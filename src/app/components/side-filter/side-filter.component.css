@@ -11,7 +11,7 @@
 .filters-container {
   padding: 20px;
   border-right: 1px solid #ccc;
-  width: 300px;
+  width: 350px;
 }
 
 
@@ -27,7 +27,7 @@ input {
   border: lightgrey 1px solid;
 }
 
-button {
+#button-filters {
   margin-top: 20px;
   padding: 10px;
   background-color: #e0843d;
@@ -42,3 +42,25 @@ label{
   font-weight: bold;
   margin-top: 20px;
 }
+
+mat-slider {
+  width: 300px;
+}
+
+.numberInput {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.filter-sections{
+  padding-bottom: 20px;
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: row;
+}
+  .panels-description {
+  padding-left: 15px;
+}
+

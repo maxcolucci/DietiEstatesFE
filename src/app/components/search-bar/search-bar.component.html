@@ -1,11 +1,31 @@
 <div class="search-container">
-  <mat-form-field>
-    <mat-label>Tipo di struttura</mat-label>
-    <mat-select>
-      <ng-container>
-        <mat-option *ngFor="let building of buildingTypes" [value]="building.value">{{building.viewValue}}</mat-option>
-      </ng-container>
-    </mat-select>
-  </mat-form-field>
-<!--  <button (click)="onSearch()">Ricerca</button>-->
+  <div class="search-bar">
+    <div class="custom-field">
+      <mat-label class="custom-label">Tipo di struttura</mat-label>
+      <mat-select class="custom-select">
+        <ng-container>
+          <mat-option *ngFor="let building of buildingTypes" [value]="building.value">{{building.viewValue}}</mat-option>
+        </ng-container>
+      </mat-select>
+    </div>
+
+    <div class="custom-field">
+      <mat-label class="custom-label">Tipo di vendita</mat-label>
+      <mat-select class="custom-select">
+        <ng-container>
+          <mat-option *ngFor="let contratct of contractTypes" [value]="contratct.value" [disabled]="contratct.disabled">{{contratct.viewValue}} </mat-option>
+        </ng-container>
+      </mat-select>
+    </div>
+
+    <div class="custom-field">
+      <mat-label class="custom-label">luogo</mat-label>
+      <mat-select class="custom-select">
+        <ng-container>
+          <mat-option *ngFor="let building of buildingTypes" [value]="building.value">{{building.viewValue}}</mat-option>
+        </ng-container>
+      </mat-select>
+    </div>
+
+    <button (click)="onSearch()">Ricerca</button>  </div>
 </div>
