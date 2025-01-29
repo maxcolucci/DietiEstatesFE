@@ -42,3 +42,12 @@ label{
   font-weight: bold;
   margin-top: 20px;
 }
+
+mat-slider {
+  width: 300px;
+}
+
+.numberInput {
+  width: 50px;
+  margin-left: 10px;
+}

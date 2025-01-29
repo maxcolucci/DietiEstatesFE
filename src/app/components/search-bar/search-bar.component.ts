@@ -9,6 +9,13 @@ interface BuildingType {
   value: string;
   viewValue: string;
 }
+
+interface ContractType {
+  value: string;
+  viewValue: string;
+  disabled: boolean;
+}
+
 @Component({
   selector: 'search-bar',
   templateUrl: './search-bar.component.html',
@@ -26,8 +33,16 @@ export class SearchBarComponent {
     {value: 'warehouse', viewValue: 'Magazzino'}
   ]
 
-  // onSearch() {
-  //   // Qui puoi aggiungere la logica per inviare i criteri di ricerca al servizio/endpoint
-  //   console.log('Ricerca:', this.searchCriteria);
-  // }
+  contractTypes: ContractType[] = [
+    {value: 'rent', viewValue: 'Affitto', disabled: false},
+    {value: 'sale', viewValue: 'Vendita', disabled: false},
+    {value: 'rent small', viewValue: 'Affitto Breve (prossimamente)', disabled: true},
+  ]
+
+  onSearch() {
+    // Qui puoi aggiungere la logica per inviare i criteri di ricerca al servizio/endpoint
+    // console.log('Ricerca:', this.searchCriteria);
+    console.log('funziona');
+    console.warn('funziona');
+  }
 }

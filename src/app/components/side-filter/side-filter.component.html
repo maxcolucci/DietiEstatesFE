@@ -1,9 +1,15 @@
 <div class="filters-container">
   <h3 class="title-filters">Filtri</h3>
   <form>
-    <label>Prezzo</label>
-    <input type="number" placeholder="Da" />
-    <input type="number" placeholder="A" />
+    <div>
+      <label>Prezzo</label>
+      <input class="numberInput" type="number" placeholder="Da" />
+      <input class="numberInput" type="number" placeholder="A" />
+      <mat-slider min="0" max="1000000">
+        <input value="250000" matSliderStartThumb>
+        <input value="750000" matSliderEndThumb>
+      </mat-slider>
+    </div>
 
     <label>Superficie in m2</label>
     <input type="number" placeholder="Da" />
