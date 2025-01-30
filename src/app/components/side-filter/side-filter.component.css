@@ -64,3 +64,12 @@ mat-slider {
   padding-left: 15px;
 }
 
+
+mat-slider {
+  width: 300px;
+}
+
+.numberInput {
+  width: 50px;
+  margin-left: 10px;
+}
