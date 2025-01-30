@@ -11,7 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 @Component({
   selector: 'app-side-filter',
   templateUrl: './side-filter.component.html',
-  imports: [MatSliderModule, MatExpansionPanel, MatAccordion, MatExpansionModule, MatExpansionPanelTitle, MatExpansionPanelDescription, MatIconModule],
+  imports: [MatSliderModule, MatExpansionPanel, MatAccordion, MatExpansionModule, MatExpansionPanelDescription, MatIconModule],
   standalone: true,
   styleUrls: ['./side-filter.component.css']
 })

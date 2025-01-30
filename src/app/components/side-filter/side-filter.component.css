@@ -26,8 +26,7 @@ input {
   border-radius: 5px;
   border: lightgrey 1px solid;
 }
-
-#button-filters {
+button{
   margin-top: 20px;
   padding: 10px;
   background-color: #e0843d;
