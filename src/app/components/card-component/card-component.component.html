@@ -1,0 +1,15 @@
+<div class="card-container">
+    <mat-card class="example-card" appearance="outlined" *ngFor="let house of dataSource.connect() | async">
+        <mat-card-header>
+            <img mat-card-sm-image [src]="house.image" alt="Immagine di {{ house.title }}">
+            <mat-card-title>{{ house.title }}</mat-card-title>
+            <mat-card-subtitle>{{ house.fewInfo }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            {{ house.shortDescription }}
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- Paginatore in basso -->
+<mat-paginator [length]="houseCard.length" [pageSize]="6"></mat-paginator>

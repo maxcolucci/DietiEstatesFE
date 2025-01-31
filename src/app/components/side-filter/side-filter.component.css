@@ -27,13 +27,22 @@ input {
   border: lightgrey 1px solid;
 }
 
-#button-filters {
+button{
   margin-top: 20px;
   padding: 10px;
   background-color: #e0843d;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-filter{
+  background-color: lightgray;
+  margin-right: 10px;
+  font-size: 16px;
+
+  color: white;
   cursor: pointer;
 }
 
