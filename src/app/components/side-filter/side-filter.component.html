@@ -51,14 +51,84 @@
       </mat-accordion>
     </div>
 
-    <label>Superficie in m2</label>
-    <input type="number" placeholder="Da" />
-    <input type="number" placeholder="A" />
+    <div class="filter-sections">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <div class="filter-header">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="bathtub"></mat-icon>
+              <mat-panel-description class="panels-description">Bagni</mat-panel-description>
+            </div>
+          </mat-expansion-panel-header>
+          <button> 1 </button>
+          <button> 2 </button>
+          <button> 3 </button>
+          <button> >3 </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="filter-sections">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <div class="filter-header">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="stairs"></mat-icon>
+              <mat-panel-description class="panels-description">Piano</mat-panel-description>
+            </div>
+          </mat-expansion-panel-header>
+          <button> Piano Terra </button>
+          <button> Piano Intemedio </button>
+          <button> Ultimo Piano </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="filter-sections">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <div class="filter-header">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="garage"></mat-icon>
+              <mat-panel-description class="panels-description">Garage o Posto Auto</mat-panel-description>
+            </div>
+          </mat-expansion-panel-header>
+          <button> Garage Singolo </button>
+          <button> Garage Doppio </button>
+          <button> Posto Auto </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="filter-sections">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <div class="filter-header">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="air"></mat-icon>
+              <mat-panel-description class="panels-description">Clima e Riscaldamento</mat-panel-description>
+            </div>
+          </mat-expansion-panel-header>
+          <button> Riscaldamento Autonomo </button>
+          <button> Riscaldamento Centralizzato </button>
+          <button> Aria Condizionata </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="filter-sections">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <div class="filter-header">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="bolt"></mat-icon>
+              <mat-panel-description class="panels-description">Efficienza Energetica</mat-panel-description>
+            </div>
+          </mat-expansion-panel-header>
+          <button> Alta </button>
+          <button> Media</button>
+          <button> Bassa </button>
+          <button> Tutte </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
 
-    <label>N° Locali</label>
-    <input type="number" placeholder="Da" />
-    <input type="number" placeholder="A" />
-
-    <button type="submit">Applica Filtri</button>
+    <button id="button-filters" type="submit">Applica Filtri</button>
   </form>
 </div>
