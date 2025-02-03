@@ -1,18 +1,18 @@
 <app-header></app-header>
-
 <div class="main-container">
-  <mat-sidenav-container class="example-container" autosize>
+  <mat-sidenav-container class="example-container">
+
+    <mat-sidenav-content>
+      <search-bar> </search-bar>
+      <div class="house-container">
+        <app-saved-page></app-saved-page>
+      </div>
+    </mat-sidenav-content>
+
     <mat-sidenav [(opened)]="isSidenavOpened">
       <div class="filters-container">
         <app-side-filter></app-side-filter>
       </div>
     </mat-sidenav>
-
-    <mat-sidenav-content>
-      <search-bar> </search-bar>
-      <div class="house-container">
-        <app-card-component></app-card-component>
-      </div>
-    </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

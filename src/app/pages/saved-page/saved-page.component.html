@@ -1,0 +1,8 @@
+<div class="container">
+  <div *ngFor="let house of houses" >
+    <app-card-component [house]="house"></app-card-component>
+  </div>
+  <!-- nel for ci sono tutte le case, poiché nel ts andrà a prendere soltanto le case salvate tramite BE quindi quì non dovrò
+  fare nessun controllo-->
+</div>
+<mat-paginator [length]="houses.length" [pageSize]="6"></mat-paginator>

@@ -8,10 +8,11 @@ import {FormsModule} from '@angular/forms';
 import {MatCheckbox} from '@angular/material/checkbox';
 import {MatButton} from '@angular/material/button';
 import { SidenavService } from './sidenav.service';
+import {SavedPageComponent} from './pages/saved-page/saved-page.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, SideFilterComponent, SearchBarComponent, CardComponentComponent, MatSidenavModule, FormsModule, MatCheckbox, MatButton],
+  imports: [HeaderComponent, SideFilterComponent, SearchBarComponent, MatSidenavModule, FormsModule, SavedPageComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
@@ -20,7 +21,8 @@ export class AppComponent implements OnInit {
 
   isSidenavOpened = false;
 
-  constructor(private sidenavService: SidenavService) {}
+  constructor(private sidenavService: SidenavService) {
+  }
 
   ngOnInit() {
     this.sidenavService.sidenavState$.subscribe((state) => {

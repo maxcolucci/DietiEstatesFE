@@ -5,10 +5,9 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class SidenavService {
-  private sidenavState = new BehaviorSubject<boolean>(false); // Stato del sidenav
-  sidenavState$ = this.sidenavState.asObservable(); // Observable che altri componenti possono osservare
+  private sidenavState = new BehaviorSubject<boolean>(false);
+  sidenavState$ = this.sidenavState.asObservable();
 
-  // Metodo per attivare il sidenav
   toggleSidenav() {
     this.sidenavState.next(!this.sidenavState.value);
   }
