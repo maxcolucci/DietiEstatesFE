@@ -31,11 +31,14 @@
   </div>
 
   <div class="button-container">
-    <button mat-button class="icon-button">
-      <mat-icon class="icon">search</mat-icon> <!-- Icona -->
-      <span class="button-text">Filtri</span> <!-- Testo che appare al passaggio del mouse -->
+    <button mat-button class="icon-button" (click)="openSidenav()">
+      <div (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+        <mat-icon class="mat-icon" *ngIf="!isHovered"> tune</mat-icon>
+        <span *ngIf="isHovered">filtri</span>
+      </div>
+
     </button>
-    <button (click)="onSearch()">Ricerca</button>
+    <button id="search-button" (click)="onSearch()">Ricerca</button>
   </div>
 
 </div>
