@@ -1,10 +1,25 @@
 <app-header></app-header>
-<search-bar></search-bar>
+
 <div class="main-container">
-  <div class="filters-container">
-    <app-side-filter></app-side-filter>
-  </div>
-  <div class="house-container">
-    <app-card-component></app-card-component>
-  </div>
+  <mat-sidenav-container class="example-container">
+    <!-- mat-sidenav solo per il contenuto sotto il header e search-bar -->
+    <mat-sidenav
+      #sidenav
+      [(opened)]="opened"
+      (opened)="events.push('open!')"
+      (closed)="events.push('close!')"
+      opened style="width: 540px;">
+      <div class="filters-container">
+        <app-side-filter></app-side-filter>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <search-bar> </search-bar>
+      <div class="house-container">
+        <button mat-button (click)="sidenav.toggle()">Toggle Sidenav</button>
+        <app-card-component></app-card-component>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

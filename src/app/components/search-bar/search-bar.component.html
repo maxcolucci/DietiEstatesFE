@@ -1,5 +1,6 @@
 <div class="search-container">
   <div class="search-bar">
+
     <div class="custom-field">
       <mat-label class="custom-label">Tipo di struttura</mat-label>
       <mat-select class="custom-select">
@@ -27,5 +28,15 @@
       </mat-select>
     </div>
 
-    <button (click)="onSearch()">Ricerca</button>  </div>
+  </div>
+
+  <div class="button-container">
+    <button mat-button class="icon-button">
+      <mat-icon class="icon">search</mat-icon> <!-- Icona -->
+      <span class="button-text">Filtri</span> <!-- Testo che appare al passaggio del mouse -->
+    </button>
+    <button (click)="onSearch()">Ricerca</button>
+  </div>
+
 </div>
+

@@ -1,5 +1,33 @@
+/* Contenitore principale */
 .main-container {
   display: flex;
-  justify-content: flex-start;
-  padding: 20px;
+  flex-direction: column;
+  height: 100vh; /* L'altezza del contenitore è 100% della finestra */
 }
+
+/* Contenitore per il sidenav e il contenuto */
+.example-container {
+  display: flex;
+  height: 100%;  /* Rende il contenitore del sidenav a piena altezza */
+}
+
+/* Impostiamo la larghezza del sidenav */
+mat-sidenav {
+  width: 540px; /* Larghezza fissa del sidenav */
+}
+
+/* Contenuto del sidenav che riempie lo spazio disponibile */
+mat-sidenav-content {
+  flex-grow: 1; /* Quando il sidenav è chiuso, questo elemento occupa tutto lo spazio disponibile */
+}
+
+/* Sezione per la house-container */
+.house-container {
+  padding: 20px; /* Aggiungiamo un po' di padding per distanziare il contenuto dai bordi */
+}
+
+/* Configurazione quando il sidenav è aperto */
+.mat-sidenav-container.mat-sidenav-opened mat-sidenav-content {
+  margin-left: 540px; /* Quando il sidenav è aperto, il contenuto si sposta a destra */
+}
+

@@ -11,9 +11,8 @@
 .filters-container {
   padding: 20px;
   border-right: 1px solid #ccc;
-  width: 350px;
+  width: 500px;
 }
-
 
 form {
   display: flex;
@@ -69,17 +68,23 @@ mat-slider {
   display: flex;
   flex-direction: row;
 }
-  .panels-description {
+
+.panels-description {
   padding-left: 15px;
 }
 
-
-mat-slider {
-  width: 300px;
+.mat-button-toggle {
+  background-color: #f1f1f1;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.numberInput {
-  width: 50px;
-  margin-left: 10px;
+.mat-button-toggle-checked {
+  background-color: #4CAF50;
+  color: white;
 }
 
+.mat-button-toggle-checked:hover {
+  background-color: #45a049;
+}

@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {CommonModule} from '@angular/common';
+import {MatButton} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 interface BuildingType {
   value: string;
@@ -20,7 +22,7 @@ interface ContractType {
   selector: 'search-bar',
   templateUrl: './search-bar.component.html',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatFormFieldModule, MatSelectModule, MatInputModule],
+  imports: [CommonModule, FormsModule, MatFormFieldModule, MatSelectModule, MatInputModule, MatButton, MatIconModule],
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
